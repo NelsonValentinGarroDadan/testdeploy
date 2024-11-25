@@ -14,7 +14,7 @@ import { CreateUserDto } from '../users/dtos/CreateUser.dto';
 import { UsersService } from '../users/users.service';
 import { Users } from '../users/users.entity';
 import { GoogleUserDto } from '../users/dtos/GoogleUserDto';
-import { CompleteProfileDto } from '../Users/dtos/CompleteProfile.dto';
+import { CompleteProfileDto } from '../users/dtos/CompleteProfile.dto';
 import { UsersRepository } from '../users/users.repository';
 import { ChangePswDto } from '../users/dtos/ChangePsw.dto';
 
