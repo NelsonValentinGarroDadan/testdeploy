@@ -1,8 +1,8 @@
 import { Injectable } from "@nestjs/common";
-import { CreateActivityDto } from "./dtos/create-activity.dto";
 import { ActivityRepository } from "./activity.repository";
-import { SearchActivitiesDto } from "./dtos/search-activitiesDto.dto";
 import { Activity } from "./activity.entity";
+import { SearchActivitiesDto } from "./dtos/search-activitiesDto.dto";
+import { CreateActivityDto } from "./dtos/create-activity.dto";
 
 @Injectable()
 export class ActivityService {
