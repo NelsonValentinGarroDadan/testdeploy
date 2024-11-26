@@ -5,7 +5,7 @@ import { AuthModule } from 'modules/auth/auth.module';
 import { CategoryModule } from 'modules/categories/category.module';
 import { StripeModule } from 'modules/stripe/stripe.module';
 import { UsersModule } from 'modules/users/users.module';
-import { ActivityModule } from './modules/activities/activity.module';
+import { ActivityModule } from 'modules/activities/Activity.module';
 
 @Module({
   imports: [
