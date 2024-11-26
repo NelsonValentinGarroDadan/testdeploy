@@ -12,7 +12,7 @@ import { Credentials } from '../credentials/credentials.entity';
 import * as bcrypt from 'bcrypt';
 import { capitalizeWords } from '../../utils/capitalizeWords';
 import { MailService } from '../mail/mail.service';
-import { UpdateUserPremiumStatusDto } from './dtos/changeIs-premium.dto';
+import { UpdateUserPremiumStatusDto } from './dtos/change-is-premium.dto';
 
 @Injectable()
 export class UsersRepository {
