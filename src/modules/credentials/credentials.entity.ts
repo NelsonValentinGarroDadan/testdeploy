@@ -1,5 +1,5 @@
+import { Users } from '@modules/users/users.entity';
 import { Column, Entity, OneToOne, PrimaryGeneratedColumn } from 'typeorm';
-import { Users } from '../users/users.entity';
 
 @Entity()
 export class Credentials {

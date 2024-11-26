@@ -1,6 +1,6 @@
 import { NestFactory } from '@nestjs/core';
-import { AppModule } from '../app.module';
-import { loggerGblobal } from '../middleware/logger.middleware';
+import { AppModule } from './app.module';
+import { loggerGblobal } from './middleware/logger.middleware';
 import { ValidationPipe } from '@nestjs/common';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 

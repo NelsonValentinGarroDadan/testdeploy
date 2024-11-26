@@ -1,14 +1,13 @@
 import { BadRequestException, Injectable, NotFoundException } from "@nestjs/common";
-import { Activity } from "./activity.entity";
 import { InjectEntityManager, InjectRepository } from "@nestjs/typeorm";
-import { In, Repository } from "typeorm";
-import { Category } from "../categories/category.entity";
-import { Users } from "../users/users.entity";
-import { EntityManager } from "typeorm";
-import { ActivityStatus } from "./enums/activity-status.enum";
+import { EntityManager, In, Repository } from "typeorm";
 import * as moment from "moment";
+import { Activity } from "./activity.entity";
+import { Users } from "@modules/users/users.entity";
+import { Category } from "@modules/categories/category.entity";
 import { CreateActivityDto } from "./dtos/create-activity.dto";
 import { SearchActivitiesDto } from "./dtos/search-activitiesDto.dto";
+import { ActivityStatus } from "./enums/activity-status.enum";
 
 @Injectable()
 export class ActivityRepository {

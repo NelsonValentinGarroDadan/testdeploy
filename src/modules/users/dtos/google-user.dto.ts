@@ -1,11 +1,9 @@
 import {
-    IsDate,
     IsEmail,
     IsNotEmpty,
     IsString,
     Length,
   } from 'class-validator';
-import { Type } from 'class-transformer';
 
 export class GoogleUserDto {
   /**

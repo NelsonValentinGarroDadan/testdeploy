@@ -1,14 +1,14 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Activity } from './activity.entity';
+import { Users } from '@modules/users/users.entity';
+import { Credentials } from '@modules/credentials/credentials.entity';
+import { Category } from '@modules/categories/category.entity';
+import { AuthModule } from '@modules/auth/auth.module';
 import { ActivityController } from './activity.controller';
 import { ActivityService } from './activity.service';
 import { ActivityRepository } from './activity.repository';
-import { Users } from '../users/users.entity';
-import { MailService } from '../mail/mail.service';
-import { AuthModule } from '../auth/auth.module';
-import { Category } from '../categories/category.entity';
-import { Credentials } from 'modules/credentials/credentials.entity';
+import { MailService } from '@modules/mail/mail.service';
 
 @Module({
   imports: [

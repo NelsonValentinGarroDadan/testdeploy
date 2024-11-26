@@ -1,3 +1,5 @@
+import { Activity } from '@modules/activities/activity.entity';
+import { Credentials } from '@modules/credentials/credentials.entity';
 import {
   Column,
   Entity,
@@ -8,8 +10,6 @@ import {
   OneToOne,
   PrimaryGeneratedColumn,
 } from 'typeorm';
-import { Credentials } from '../credentials/credentials.entity';
-import { Activity } from '../activities/activity.entity';
 
 @Entity()
 export class Users {
