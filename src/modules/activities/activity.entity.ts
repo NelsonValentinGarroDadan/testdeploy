@@ -1,6 +1,6 @@
-import { Category } from '@modules/categories/category.entity';
-import { Users } from '@modules/users/users.entity';
 import { Entity, Column, PrimaryGeneratedColumn, ManyToOne, ManyToMany, JoinTable } from 'typeorm';
+import { Users } from '../users/users.entity';
+import { Category } from '../categories/category.entity';
 import { ActivityStatus } from './enums/activity-status.enum';
 
 @Entity({

@@ -22,10 +22,10 @@ import { GoogleAuthGuard } from './guards/google-auth.guard';
 import * as dotenv from 'dotenv';
 import { MailService } from '../mail/mail.service';
 import { ChangePswDto } from '../users/dtos/change-psw.dto';
-dotenv.config({ path: 'src/.env.local' });
+import { AuthGuard } from 'src/guards/auth.guard';
+dotenv.config({ path: './.env.local' });
 import { JwtService } from '@nestjs/jwt';
 import { CompleteProfileDto } from '../users/dtos/complete-profile.dto';
-import { AuthGuard } from '@nestjs/passport';
 
 
 @Controller('auth')

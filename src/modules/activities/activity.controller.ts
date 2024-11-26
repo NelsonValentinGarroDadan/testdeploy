@@ -1,7 +1,7 @@
 import { Body, Controller, Get, Param, ParseUUIDPipe, Post, Query } from "@nestjs/common";
-import { ActivityService } from "./activity.service";
-import { SearchActivitiesDto } from "./dtos/search-activitiesDto.dto";
 import { CreateActivityDto } from "./dtos/create-activity.dto";
+import { ActivityService } from "./activity.service";
+import { SearchActivitiesDto } from "./dtos/search-activities.dto";
 
 @Controller('activities')
 
