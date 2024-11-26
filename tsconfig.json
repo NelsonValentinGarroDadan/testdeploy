@@ -12,7 +12,8 @@
     "baseUrl": "./src",
     "paths": {
       "@config/*": ["config/*"],
-      "@modules/*": ["modules/*"]
+      "@modules/*": ["modules/*"],
+      "@modules/users/*": ["modules/users/*"],
     },
     "incremental": true,
     "skipLibCheck": true,
